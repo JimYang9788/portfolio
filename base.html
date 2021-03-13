@@ -12,7 +12,9 @@
 
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" 
         rel="stylesheet">  
-
+        <!-- React Library & React DOM-->
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -44,11 +46,8 @@
     </section>
 
     <div class="portfolio-item-individual">
-        <p>This page is still under construction! I am currently working on migrating my 
-            projects & articles from a deprecated server to this new server. It will take 
-            about three days for me to complete the migration.
 
-        </p>
+        { % block portfolio-item-individual %} { % endblock %}
         <img src="img/background2.jpeg" alt="computer picture">
 
     </div>
